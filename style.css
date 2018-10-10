@@ -1,0 +1,77 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html{font-size: 62.5%;}
+
+body{
+  box-sizing: border-box; 
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+header{
+  background-image: url(img/stars.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 100vh;
+}
+
+nav{
+ height: 10vh;
+ background-color:rgba(0,0,0,.5);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.5rem;
+}
+
+.navbar-links{
+  display: flex;
+  flex: 0 0 50%;
+  justify-content: space-between;
+}
+
+nav a, #sidenav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+#sidenav a:hover, nav a:hover{
+  font-weight: bold;
+}
+
+.logo{
+  margin-right: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@media (max-width:600px){
+  .navbar-links{display: none;}
+}
+
+#sidenav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .8;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 25rem;
+  display: none;
+}
+
+#sidenav .closeMenu{font-weight: bold;}
+
+#sidenav a{
+  padding-top: 3rem;
+}

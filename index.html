@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+  <nav id="navbar">
+    <a href="#" class="openMenu"><i class="fas fa-bars"></i></a>
+    <div class="navbar-links">
+    <a href="#">לרכישה</a>
+    <a href="#">מיקום</a>
+    <a href="#">מוצרים</a>
+    <a href="#">אודות</a>
+    </div>
+    <a href="#" class="logo">מורשת</a> 
+  </nav>
+
+  <div id="sidenav">
+      <a href="#" class="closeMenu">X</a>
+      <a href="#!">עמוד הבית</a>
+      <a href="#!">אודות</a>
+      <a href="#!">מוצרים</a>
+      <a href="#!">יצירת קשר</a>
+  </div>
+</header>
+  <script>
+    
+      const openMenu = document.querySelector('.openMenu');
+      const closeMenu = document.querySelector('.closeMenu');;
+      const sidenav =  document.getElementById('sidenav');
+    
+      openMenu.addEventListener('click', openSidenav);
+      closeMenu.addEventListener('click', closeSidenav);
+      
+      function openSidenav(){
+        sidenav.style.display = 'flex'; 
+      }
+    
+      function closeSidenav(){
+        sidenav.style.display = 'none'; 
+      } 
+      
+      </script>
+</body>
+</html>
